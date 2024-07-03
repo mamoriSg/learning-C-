@@ -1,0 +1,14 @@
+C:\Users\Public\04-Cours C#\bin\Debug\net8.0\04-Cours C#.exe
+C:\Users\Public\04-Cours C#\bin\Debug\net8.0\04-Cours C#.deps.json
+C:\Users\Public\04-Cours C#\bin\Debug\net8.0\04-Cours C#.runtimeconfig.json
+C:\Users\Public\04-Cours C#\bin\Debug\net8.0\04-Cours C#.dll
+C:\Users\Public\04-Cours C#\bin\Debug\net8.0\04-Cours C#.pdb
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.AssemblyInfoInputs.cache
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.AssemblyInfo.cs
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.csproj.CoreCompileInputs.cache
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.dll
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\refint\04-Cours C#.dll
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.pdb
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.genruntimeconfig.cache
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\ref\04-Cours C#.dll
