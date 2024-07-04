@@ -12,3 +12,4 @@ C:\Users\Public\04-Cours C#\obj\Debug\net8.0\refint\04-Cours C#.dll
 C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.pdb
 C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.genruntimeconfig.cache
 C:\Users\Public\04-Cours C#\obj\Debug\net8.0\ref\04-Cours C#.dll
+C:\Users\Public\04-Cours C#\obj\Debug\net8.0\04-Cours C#.sourcelink.json

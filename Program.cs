@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Collections.Generic;
+using System.IO;
 
 namespace project
 {
@@ -9,32 +10,22 @@ namespace project
     {
         static void Main()
         {
-            // Практика функції
-            byte[] nums1 = { 5, 7, 8 };
-            int summa1 = Summa(nums1);
+            // // Робота з файлами
+            // Console.WriteLine("Enter text: ");
+            // string text = Console.ReadLine();
+            // using(FileStream stream = new FileStream("info.txt", FileMode.OpenOrCreate)){
+            //     byte[] array = System.Text.Encoding.Default.GetBytes(text);
+            //     stream.Write(array);
+            // }
 
-            byte[] nums2 = { 5, 7, 8, 9 ,20 };
-            int summa2 = Summa(nums2);
+            using(FileStream stream = File.OpenRead("info.txt")){
+                byte[] array = new byte[stream.Length];
+                stream.Read(array);
 
-            if (summa1 > summa2)
-                Console.WriteLine("Max: " + summa1);
-            else
-                Console.WriteLine("Max: " + summa2);
-
-        }
-
-        public static int Summa (byte[] digits){
-            byte[] nums1 = { 5, 7, 8 };
-            int summa = 0;
-            foreach (byte el in digits)
-            {
-                summa += el;
+                string textFromFile = System.Text.Encoding.Default.GetString(array);
+                Console.WriteLine(textFromFile);
             }
-            // Console.WriteLine("Result: " + summa);
-            return summa;
+
         }
-
     }
-
 }
-
