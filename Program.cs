@@ -10,21 +10,29 @@ namespace project
     {
         static void Main()
         {
-            // // Робота з файлами
-            // Console.WriteLine("Enter text: ");
-            // string text = Console.ReadLine();
-            // using(FileStream stream = new FileStream("info.txt", FileMode.OpenOrCreate)){
-            //     byte[] array = System.Text.Encoding.Default.GetBytes(text);
-            //     stream.Write(array);
-            // }
+            // Try Cathc
+            bool isRunning = true;
+            while(isRunning){
+                try
+                {
+                    Console.WriteLine("Enter number: ");
+                    int num = Convert.ToInt32(Console.ReadLine());
 
-            using(FileStream stream = File.OpenRead("info.txt")){
-                byte[] array = new byte[stream.Length];
-                stream.Read(array);
+                    float result = 100 / num;
 
-                string textFromFile = System.Text.Encoding.Default.GetString(array);
-                Console.WriteLine(textFromFile);
+                    Console.WriteLine("Result: " + result);
+                    isRunning = false;
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("You enter not a number");
+                } catch(DivideByZeroException){
+                    Console.WriteLine("Your number is zero");
+                } finally {
+                    
+                }
             }
+            
 
         }
     }
