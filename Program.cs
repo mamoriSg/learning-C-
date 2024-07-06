@@ -10,30 +10,18 @@ namespace project
     {
         static void Main()
         {
-            // Try Cathc
-            bool isRunning = true;
-            while(isRunning){
-                try
-                {
-                    Console.WriteLine("Enter number: ");
-                    int num = Convert.ToInt32(Console.ReadLine());
+            //ООП
+            Robot bot = new Robot();
+            bot.setValues("Bot", 3, new byte[] { 0, 0, 0 });
 
-                    float result = 100 / num;
+            Robot killer = new Robot();
+            killer.setValues("Killer", 2, new byte[] { 0, 1, 0 });
 
-                    Console.WriteLine("Result: " + result);
-                    isRunning = false;
-                }
-                catch (FormatException)
-                {
-                    Console.WriteLine("You enter not a number");
-                } catch(DivideByZeroException){
-                    Console.WriteLine("Your number is zero");
-                } finally {
-                    
-                }
-            }
+            bot.printValues();
+            killer.printValues();
+        }
             
 
         }
-    }
 }
+
