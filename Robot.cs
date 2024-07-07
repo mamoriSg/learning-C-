@@ -9,15 +9,38 @@ class Robot
 
     private byte[] coordinates;
 
-    public void setValues(string _name, short _weight, byte[] _cordinates){
+    public static int count = 0;
+    public Robot(){
+        count++;
+    }
+
+    public Robot(string _name){
         name = _name;
-        weight = _weight;
-        coordinates = _cordinates;
+        count++;
+    }
+
+    public Robot(string _name, short _weight, byte[] _cordinates)
+    {
+        this.setValues(_name, _weight, _cordinates);
+        this.printValues();
+        count++;
+
+    }
+
+    public void setValues(string name, short weight, byte[] cordinates){
+        this.name = name;
+        this.weight = weight;
+        this.coordinates = cordinates;
     }
     public void printValues(){
-        Console.WriteLine(name + ", weight" + weight + ", coordinates: ");
-        foreach (byte el in coordinates)
+        Console.WriteLine(this.name + ", weight" + this.weight + ", coordinates: ");
+        foreach (byte el in this.coordinates)
             Console.Write(el + " - ");
         Console.WriteLine("");
     }
+
+    public static void Print(){
+        Console.WriteLine("Count: " + count);
+    }
 }
+
