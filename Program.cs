@@ -13,9 +13,9 @@ namespace project
         {
             //ООП
             Robot bot = new Robot();
-            bot.Weight = -5;
-            bot.Width = 10;
-            Console.Write(bot.Weight);
+            Robot killer = new Killer("Killer", 3, new byte[] {0,0,0}, 10);
+
+
         }
             
 

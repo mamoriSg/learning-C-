@@ -36,7 +36,7 @@ class Robot
     public Robot(string _name, short _weight, byte[] _cordinates)
     {
         this.setValues(_name, _weight, _cordinates);
-        this.printValues();
+        // this.printValues();
         count++;
 
     }
