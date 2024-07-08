@@ -9,6 +9,20 @@ class Robot
 
     private byte[] coordinates;
 
+    public short Weight {
+        get{
+            Console.WriteLine("Resut : ");
+            return this.weight;
+        }
+        set{
+            if (value < 1)
+                weight = 0;
+            else
+                this.weight = value;
+        }
+    }
+
+    public int Width{ get; set; }
     public static int count = 0;
     public Robot(){
         count++;

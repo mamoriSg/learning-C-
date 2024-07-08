@@ -12,15 +12,10 @@ namespace project
         static void Main()
         {
             //ООП
-            Robot bot = new Robot("Bot", 3, new byte[] { 0, 0, 0 });
-
-            Robot killer = new Robot("Killer", 2, new byte[] { 0, 1, 0 });
-
-            Robot robot = new Robot("Alex");
-
-            // Robot.count = 10;
-
-            Robot.Print();
+            Robot bot = new Robot();
+            bot.Weight = -5;
+            bot.Width = 10;
+            Console.Write(bot.Weight);
         }
             
 
