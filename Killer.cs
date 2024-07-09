@@ -12,6 +12,12 @@ class Killer : Robot
         this.Damage = damage;
         // base.printValues();
      }
+
+    public override void printValues()
+    {
+        base.printValues();
+        Console.WriteLine("Damage: " + Damage);
+    }
     public void Lazer()
     {
         Console.Write("Lazer is shooting");

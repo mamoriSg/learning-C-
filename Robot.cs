@@ -53,8 +53,8 @@ class Robot
         this.weight = weight;
         this.coordinates = cordinates;
     }
-    public void printValues(){
-        Console.WriteLine(this.name + ", weight" + this.weight + ", coordinates: ");
+    public virtual void printValues(){
+        Console.WriteLine(this.name + ", weight: " + this.weight + ", coordinates: ");
         foreach (byte el in this.coordinates)
             Console.Write(el + " - ");
         Console.WriteLine("");
