@@ -9,6 +9,13 @@ class Robot
 
     private byte[] coordinates;
 
+    public string Name {
+        get {
+            return name;
+        }
+        private set {}
+    }
+
     public short Weight {
         get{
             Console.WriteLine("Resut : ");

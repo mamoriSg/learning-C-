@@ -10,7 +10,7 @@ class Killer : Robot
 
     public Killer(string name, short weight, byte[] cordinates, int damage) : base(name, weight, cordinates){
         this.Damage = damage;
-        base.printValues();
+        // base.printValues();
      }
     public void Lazer()
     {

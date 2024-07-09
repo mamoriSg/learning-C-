@@ -1,24 +1,30 @@
 ﻿using System;
-using System.Diagnostics;
 using System.Collections.Generic;
-using System.IO;
 
 namespace project
 {
-
     class Program
     {
-        
         static void Main()
         {
-            //ООП
-            Robot bot = new Robot();
+            Robot bot = new Robot("Bot");
             Robot killer = new Killer("Killer", 3, new byte[] {0,0,0}, 10);
 
+            List<Robot> robots = new List<Robot>();
+            robots.Add(bot);
+            robots.Add(killer);
+            robots.Add(new Robot("ALex"));
 
+            Killer killer1 = null;
+            foreach(Robot el in robots)
+            {
+                if(el.Name == "Killer"){
+                    killer1 = el as Killer;
+                    killer1.Lazer();
+                }
+                Console.WriteLine(el is Killer);
+            }
         }
-            
-
         }
 }
 
