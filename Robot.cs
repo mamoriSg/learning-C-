@@ -2,7 +2,7 @@ using System;
 
 namespace project;
 
-class Robot 
+abstract class Robot 
 {
     private string name;
     private short weight;
@@ -48,6 +48,7 @@ class Robot
 
     }
 
+    public abstract void Moving(float speed);
     public void setValues(string name, short weight, byte[] cordinates){
         this.name = name;
         this.weight = weight;
