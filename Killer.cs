@@ -2,16 +2,17 @@ using System;
 
 namespace project;
 
-class Killer : Robot
+class Killer : Robot, IFly
 {
     public int Damage { get; private set; }
 
-    public Killer(){}
+    public Killer() { }
 
-    public Killer(string name, short weight, byte[] cordinates, int damage) : base(name, weight, cordinates){
+    public Killer(string name, short weight, byte[] cordinates, int damage) : base(name, weight, cordinates)
+    {
         this.Damage = damage;
         // base.printValues();
-     }
+    }
 
     public override void printValues()
     {
@@ -26,5 +27,10 @@ class Killer : Robot
     public override void Moving(float speed)
     {
         Console.WriteLine("Killer is jumping: " + speed);
+    }
+
+    public void RobotFly(int maxheigh)
+    {
+
     }
 }
