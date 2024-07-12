@@ -8,7 +8,7 @@ class Bot : Robot, IRun
     public Bot()
     {
     }
-    public Bot(string name, short weight, byte[] cordinates) : base(name, weight, cordinates) { }
+    public Bot(string name, short weight, byte[] cordinates, TypeRobot type) : base(name, weight, cordinates, type) { }
 
     public void RobotRun()
     {

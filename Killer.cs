@@ -8,7 +8,7 @@ class Killer : Robot, IFly
 
     public Killer() { }
 
-    public Killer(string name, short weight, byte[] cordinates, int damage) : base(name, weight, cordinates)
+    public Killer(string name, short weight, byte[] cordinates, int damage, TypeRobot type) : base(name, weight, cordinates, type)
     {
         this.Damage = damage;
         // base.printValues();
